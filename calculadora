@@ -1,0 +1,67 @@
+let partidas = media (20,5)
+console.log ("O saldo total de partidas é: " + partidas)
+
+function media (vitorias, derrotas){ 
+    let calcular = vitorias - derrotas 
+        
+    if (calcular < 10)
+        console.log ("Ferro")
+
+    else if (calcular >= 11 && calcular <= 20)
+        console.log ("Bronze")
+
+    else if (calcular >= 21 && calcular <= 50)
+        console.log ("Prata")
+
+    else if (calcular >= 51 && calcular <= 80)
+        console.log ("Ouro")
+
+    else if (calcular >= 81 && calcular <= 90)
+        console.log ("Diamante")
+
+    else if (calcular >= 91 && calcular <= 100)
+        console.log ("Lendário")
+
+    else if (calcular >= 100)
+        console.log ("Imortal")
+    return calcular
+}
+
+
+
+
+let rankings = ["Ferro", "Bronze", "Prata", "Ouro", "Diamante", "Lendário", "Imortal"]
+
+let partidas1 = media1 (20,5)
+console.log ("O saldo total de partidas é: " + partidas1)
+
+function media1 (vitorias1, derrotas1){  
+    let calcular1 = vitorias1 - derrotas1
+    
+    switch (true){
+        case calcular1 <= 10:
+        console.log (rankings [0])
+        break
+
+        case calcular1 >= 11 && calcular1 <= 20:
+            console.log (rankings [1])
+            break
+
+        case calcular1 >= 21 && calcular1 <= 50:
+            console.log (rankings [2])
+            break
+
+        case calcular1 >= 51 && calcular1 <= 80:
+            console.log (rankings [3])
+            break
+
+        case calcular1 >= 81 && calcular1 <= 90:
+            console.log (rankings [4])
+            break
+
+     case calcular1 >= 91 && calcular1 <= 100:
+            console.log (rankings [5])
+            break
+    } 
+        return calcular1
+}
